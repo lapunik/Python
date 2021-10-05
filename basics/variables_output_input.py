@@ -34,7 +34,6 @@ print(retezec[1:4])
 
 print("Prevedu int na sting, abych ho mohl vypsat " + str(hodnota) + "to je ono")
 ### Aritmetické operace ####################################################################################################################################
-print(2+6)
 print(15-9)
 print(5*9)
 print(7/3) # po deleni se číslo vždy převede na float, pokud chci celočíselné dělení, musím použít dvě lomítka (zaokrouhleni dolu)
