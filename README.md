@@ -1,3 +1,7 @@
 # python_learning
+## menší nadpis
+### ještě menší nadpis
 Moje základy v Python
-Vytvářím nějaký konflikt pro ukázku
+```
+Něco
+```
