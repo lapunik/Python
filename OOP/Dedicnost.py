@@ -1,4 +1,4 @@
-class Osoba: # dobrá praxe říká, že v názvech tříd nepoužíváme podtržítka a začínáme velkými písmeny 
+class Osoba:  
     
     def __init__(self,jmeno="???",vek=-1): 
         self.jmeno = jmeno
