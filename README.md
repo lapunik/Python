@@ -5,5 +5,5 @@ Moje základy v Python
 ```
 Něco
 ```
-_italics_
+_italics_  
 **tucko**
