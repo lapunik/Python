@@ -1,3 +1,2 @@
 # změnil jsem projekt 
-
-# jenom davam komentar aby se něco v kodu změnilo
+# je potřeba tady něco změnit prostě no
