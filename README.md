@@ -1,9 +1,2 @@
-# python_learning
-## menší nadpis
-### ještě menší nadpis
-Moje základy v Python
-```
-Něco
-```
-_italics_  
-**tucko**
+# __Python___
+Začal jsem se učit s **Pythonem**, tak tady jsou nějaký první kódy.
