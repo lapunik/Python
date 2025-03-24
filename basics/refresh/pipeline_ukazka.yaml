@@ -1,0 +1,31 @@
+stages: # Určím si jaké kroky bude mít moje pipeline (tady sestavím p)
+  - build # vytvoření instalačního balíčku ze zdrojového kódu
+  - test # otestování kódu 
+  - deploy # cydání softwaru
+
+# Krok 1: Sestavení aplikace
+build_job:
+  stage: build
+  script:
+    - mkdir build
+    - echo "print('Hello, world!')" > build/app.py  # Vytvoříme jednoduchou aplikaci
+  artifacts:
+    paths:          # Uchováme složku "build" pro další kroky
+      - build/
+
+# Krok 2: Test aplikace
+test_job:
+  stage: test
+  dependencies:      # Použijeme artefakty z "build_job"
+    - build_job
+  script:
+    - python3 build/app.py  # Spustíme aplikaci
+    - echo "Tests passed!"  # Předstíráme úspěšné testy
+
+# Krok 3: Deploy aplikace
+deploy_job:
+  stage: deploy
+  dependencies:      # Použijeme artefakty z "build_job"
+    - build_job
+  script:
+    - scp build/app.py user@server:/var/www/app  # Nasazení aplikace na server
